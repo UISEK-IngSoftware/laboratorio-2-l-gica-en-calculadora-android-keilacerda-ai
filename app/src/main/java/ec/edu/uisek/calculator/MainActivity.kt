@@ -18,7 +18,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CalculatorScreen()
+            val viewModel = CalculatorViewModel()
+            CalculatorScreen(viewModel)
         }
     }
 }
